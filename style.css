@@ -178,16 +178,19 @@ svg{
 
 .card-body img{
   width: 30%;
+  display: inline;
+  margin: 0 30%;
 }
 
 
 .lavarse{
-  position: absolute;
-   top: 10%;
-  left: 40%; 
+  position: relative;
+ 
+  display: inline;
 }
 .carousel-caption h5{
  font-size: 1rem;
+ display: inline-block;
 }
 
 footer{
