@@ -202,3 +202,19 @@ footer{
   .flecha{
   width: 10px;
   }
+
+  @media screen and (max-width: 600px) {
+    .card-body img{
+      width: 80%;
+      margin: 0 10%;
+
+    }
+    .lavarse{
+      font-size: 1rem ;
+      margin: 0;
+     }
+     .carousel-caption{
+       position: relative;
+     }
+
+  }
