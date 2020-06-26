@@ -1,0 +1,46 @@
+/* .card-img-top{
+  max-width: 200%;
+  height: 20rem;
+} */
+
+
+.close{
+  position: relative;
+  z-index: 3;
+}
+.atracciones{
+  margin: 0% 2%;
+  box-shadow: -12px 24px 52px 0px rgba(0,0,0,0.75);
+}
+
+button.close{
+  display: inline-flex;
+  position: absolute;
+  padding: 10px 15px 10px;
+  align-self: flex-end;
+}
+.modal-titulo{
+  position: relative;
+  padding-left: 1rem;
+}
+
+.card-body img {
+  z-index: 2;
+  margin-left: 10px;
+  padding-bottom: 1rem;
+  position: relative;
+  display: inline;
+}
+.texto-modal{
+  display: inline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 600px) { 
+  .modal-titulo{
+    position: absolute;
+    left: 16rem;
+    top: 2rem;
+  }
+ }
