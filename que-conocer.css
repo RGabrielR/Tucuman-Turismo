@@ -21,7 +21,9 @@ button.close{
 }
 .modal-titulo{
   position: relative;
-  padding-left: 1rem;
+
+  
+  
 }
 
 .card-body img {
@@ -44,3 +46,42 @@ button.close{
     top: 2rem;
   }
  }
+
+.caja-modal{
+  border-style: double;
+  border: 5px black solid ;
+  padding: 2%;
+}
+
+.cajas-modal{
+  border: solid black 1px;
+  border-radius: 2%;
+  padding: 1%;
+  width: 100%;
+  text-align: justify;
+}
+
+.ecosendas{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-titulo{
+
+z-index: 3;
+-ms-transform-origin-x: 100%;
+margin: 0% 5%;
+}
+
+.modal-titulo::before{
+  content: "";
+  background-color: rgba(197, 187, 7, 0.73);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: backInDown;
+  animation-duration: 1s;
+  z-index: -2;
+  display: inline-block;
+  
+}
