@@ -158,6 +158,9 @@ svg{
   .carousel-caption p{
     font-size: small;
   }
+  .mas-chico{
+    font-size: x-small;
+  }
   .carousel-caption h5{
     font-size: xx-small;
   }
