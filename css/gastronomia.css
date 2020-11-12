@@ -1,0 +1,593 @@
+.columna-text {
+    max-width: 70%;
+}
+
+.modal1 {
+    display: flex !important;
+    justify-content: center !important;
+    background-color: white !important;
+    margin: 10% !important;
+    padding: 10px !important;
+}
+
+.modal1 img {
+    margin: 10px;
+    max-width: 800px;
+    max-height: 700px;
+    border: solid black 5px;
+}
+
+.modal1 p h1 h2 h3 h4 h5 {
+    margin: 5px;
+}
+
+.bs-modal-vino p h1 h2 h3 h4 h5 {
+    margin: 3px;
+}
+
+.bs-modal-vino img {
+    margin: 10px;
+    max-width: 800px;
+    max-height: 700px;
+    border: solid black 5px;
+}
+
+.bs-modal-vino p {
+    font-size: medium;
+}
+
+.btn-default {
+    border: white 2px solid;
+    color: white;
+    font: bolder;
+}
+
+.btn-default:hover {
+    background-color: black;
+    color: white;
+}
+
+#sec-principal {
+    margin: 50px;
+}
+
+#area1 {
+
+    border: black 1px solid;
+    width: 100%;
+    height: auto;
+}
+
+#area2 {
+
+    background-position: center;
+    background-size: cover;
+    border: black 1px solid;
+    width: 100%;
+    height: auto;
+}
+
+#area3 {
+  
+    background-position: center;
+    background-size: cover;
+    border: black 1px solid;
+    width: 100%;
+    height: auto;
+}
+
+.imagen {
+    height: 170px !important;
+    width: 400px !important;
+}
+
+.imagen:hover {
+    transition: all .6s ease-in-out;
+    filter: grayscale(10%);
+    -webkit-filter: grayscale(10%);
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.icono {
+    filter: grayscale(40%);
+    height: 20px;
+    width: 20px;
+    -webkit-filter: grayscale(40%);
+}
+
+.icono:hover {
+    transition: all .3s ease-in-out;
+    filter: grayscale(10%);
+    -webkit-filter: grayscale(10%);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px;
+    grid-template-areas: "a a b" "a a c";
+}
+
+.item1 {
+    grid-area: a;
+    background-color: aliceblue;
+}
+
+.item2 {
+    grid-area: b;
+    background-color: antiquewhite;
+}
+
+.item3 {
+    grid-area: c;
+    background-color: azure;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 3px 3px;
+    filter: saturate(180%);
+    -webkit-filter: saturate(180%);
+}
+
+.boton_estilo {
+    background-color: white;
+    color: black;
+}
+
+.boton_estilo:hover {
+    transition: all .5s ease-in-out;
+    background-color: #f4bf3b;
+    border-width: 1px;
+    border-style: solid 1px;
+    border-color: black !important;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    font-style: bold;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+.barra-amarilla {
+    width: 100%;
+    height: 20px;
+}
+
+.carrusel {
+    height: 30em;
+}
+
+svg {
+    width: 120px;
+}
+
+.entetur:hover #uno {
+    animation: turismo 100ms normal;
+}
+
+.entetur:hover #dos {
+    animation: turismo 100ms normal 100ms;
+}
+
+.entetur:hover #tres {
+    animation: turismo 100ms normal 200ms;
+}
+
+.entetur:hover #cuatro {
+    animation: turismo 100ms normal 300ms;
+}
+
+.entetur:hover #cinco {
+    animation: turismo 100ms normal 400ms;
+}
+
+.entetur:hover #seis {
+    animation: turismo 100ms normal 500ms;
+}
+
+.entetur:hover #siete {
+    animation: turismo 100ms normal 600ms;
+}
+
+.entetur:hover #ocho {
+    animation: turismo 100ms normal 700ms;
+}
+
+.entetur:hover #nueve {
+    animation: turismo 100ms normal 800ms;
+}
+
+.entetur:hover #diez {
+    animation: turismo 100ms normal 900ms;
+}
+
+.entetur:hover #once {
+    animation: turismo 100ms normal 1000ms;
+}
+
+.entetur:hover #doce {
+    animation: turismo 100ms normal 1100ms;
+}
+
+.entetur:hover #trece {
+    animation: turismo 100ms normal 1200ms;
+}
+
+.entetur:hover #catorce {
+    animation: turismo 100ms normal 1300ms;
+}
+
+.entetur:hover #quince {
+    animation: turismo 100ms normal 1400ms;
+}
+
+.entetur:hover #dieciseis {
+    animation: turismo 100ms normal 1500ms;
+}
+
+.entetur:hover #diecisiete {
+    animation: turismo 100ms normal 1600ms;
+}
+
+.entetur:hover #dieciocho {
+    animation: turismo 100ms normal 1700ms;
+}
+
+.entetur:hover #diecinueve {
+    animation: turismo 100ms normal 1800ms;
+}
+
+.entetur:hover #veinte {
+    animation: turismo 100ms normal 1900ms;
+}
+
+.entetur:hover #veintiuno {
+    animation: turismo 100ms normal 2000ms;
+}
+
+.entetur:hover #veintidos {
+    animation: turismo 100ms normal 2100ms;
+}
+
+.entetur:hover #veintitres {
+    animation: turismo 100ms normal 2200ms;
+}
+
+.entetur:hover #veinticuatro {
+    animation: turismo 100ms normal 2300ms;
+}
+
+.entetur:hover #veinticinco {
+    animation: turismo 100ms normal 2400ms;
+}
+
+.entetur:hover #veintiseis {
+    animation: turismo 100ms normal 2500ms;
+}
+
+.entetur:hover #veintisiete {
+    animation: turismo 100ms normal 2600ms;
+}
+
+.entetur:hover #veintiocho {
+    animation: turismo 100ms normal 2700ms;
+}
+
+@keyframes turismo {
+    0% {
+        fill: black;
+    }
+    80% {
+        fill: white;
+    }
+    100% {
+        fill: gray;
+    }
+}
+
+.dosespacios {
+    margin-left: 8px;
+}
+
+.redes-sociales i {
+    width: 80px;
+}
+
+.carousel-caption {
+    z-index: 3;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 150px;
+    bottom: 0;
+    background-color: rgba(82, 78, 78, 1);
+    box-shadow: 0px -22px 49px 0px rgba(0, 0, 0, 0.75);
+}
+
+.animate__animated.animate__fadeInUp {
+    animation-duration: 2s;
+}
+
+.carousel-caption p {
+    color: white;
+}
+
+.carousel-caption h5 {
+    color: white;
+}
+
+.carousel-item::after {
+    content: "";
+    background-color: gray;
+    z-index: 4;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.card-body img {
+    width: 30%;
+    margin: 0 30%;
+}
+
+.lavarse {
+    position: relative;
+    display: inline;
+}
+
+.carousel-caption h5 {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+footer {
+    color: rgba(0, 0, 0, 1);
+}
+
+.color-iconos {
+    color: rgba(0, 0, 0, 1);
+}
+
+.flecha {
+    width: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .card-body img {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .lavarse {
+        font-size: 1rem;
+        margin: 0;
+    }
+    .carousel-caption {
+        position: relative;
+    }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background: none;
+    width: 25px;
+}
+
+.carousel-control.left {
+    left: -25px;
+}
+
+.carousel-control.right {
+    right: -25px;
+}
+
+.broun-block {
+    background: url("http://myinstantcms.ru/images/bg-broun1.jpg") repeat scroll center top rgba(0, 0, 0, 0);
+    padding-bottom: 34px;
+}
+
+.block-text {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #2c2222;
+    color: #626262;
+    font-size: 14px;
+    margin-top: 27px;
+    padding: 15px 18px;
+}
+
+.block-text a {
+    color: #7d4702;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.mark {
+    padding: 12px 0;
+    background: none;
+}
+
+.block-text p {
+    color: #585858;
+    font-family: Georgia;
+    font-style: italic;
+    line-height: 20px;
+}
+
+
+.sprite-i-triangle {
+    background-position: 0 -1298px;
+    height: 44px;
+    width: 50px;
+}
+
+.block-text ins {
+    bottom: -44px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.block {
+    display: block;
+}
+
+.zmin {
+    z-index: 1;
+}
+
+.ab {
+    position: absolute;
+}
+
+.person-text {
+    padding: 10px 0 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.person-text a {
+    color: #ffcc00;
+    display: block;
+    font-size: 14px;
+    margin-top: 3px;
+    text-decoration: underline;
+}
+
+.person-text i {
+    color: #fff;
+    font-family: Georgia;
+    font-size: 13px;
+}
+
+.rel {
+    position: relative;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background: none;
+    width: 25px;
+}
+
+.carousel-control.left {
+    left: -25px;
+}
+
+.carousel-control.right {
+    right: -25px;
+}
+
+.broun-block {
+    background: url("http://myinstantcms.ru/images/bg-broun1.jpg") repeat scroll center top rgba(0, 0, 0, 0);
+    padding-bottom: 34px;
+}
+
+.block-text {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #2c2222;
+    color: #626262;
+    font-size: 14px;
+    margin-top: 27px;
+    padding: 15px 18px;
+}
+
+.block-text a {
+    color: #7d4702;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.mark {
+    padding: 12px 0;
+    background: none;
+}
+
+.block-text p {
+    color: #585858;
+    font-family: Georgia;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.sprite-i-triangle {
+    background-position: 0 -1298px;
+    height: 44px;
+    width: 50px;
+}
+
+.block-text ins {
+    bottom: -44px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.block {
+    display: block;
+}
+
+.zmin {
+    z-index: 1;
+}
+
+.ab {
+    position: absolute;
+}
+
+.person-text {
+    padding: 10px 0 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.person-text a {
+    color: #ffcc00;
+    display: block;
+    font-size: 14px;
+    margin-top: 3px;
+    text-decoration: underline;
+}
+
+.person-text i {
+    color: #fff;
+    font-family: Georgia;
+    font-size: 13px;
+}
+
+.rel {
+    position: relative;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; 
+    align-items: center;
+  }
+  .card-deck .card {
+    display: flex;
+    justify-content: center;
+    flex-basis: 70%; /* change this value for each breakpoint*/
+  }

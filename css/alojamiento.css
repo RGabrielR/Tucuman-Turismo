@@ -1,0 +1,36 @@
+.logo1 {
+    height: 80px;
+    width: 80px;
+}
+/* 
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+} */
+
+h4 {
+    font-size: medium;
+}
+
+/* .imagen_ca {
+    height: 400px;
+    width: 90vw;
+} */
+
+.btn {
+    margin-bottom: 5px;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; 
+    align-items: center;
+  }
+  .card-deck .card {
+    display: flex;
+    justify-content: center;
+    flex-basis: 70%; 
+  }

@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Alojamientos - Tucumán Turismo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/alojamiento.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap"
+        rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="top" class="barra-amarilla bg-warning"></div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <svg class="entetur" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274.05 274.16">
+                <title>logo turismo</title>
+                <g id="uno">
+                    <polygon points="5.48 174.2 103.08 145.27 11.7 195.18 5.48 174.2" />
+                    <path
+                        d="M296.79,180.9l-61.4,33.53-25.31,13.83-5.9-19.91,92.61-27.45m8.74-3.63L202.94,207.68l6.53,22,96.06-52.46Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="cuatro">
+                    <polygon points="3.65 109.64 10.42 88.83 107.22 120.32 3.65 109.64" />
+                    <path
+                        d="M208.82,123.28l91.85,29.87L202.4,143l6.42-19.74m-.64-1.27-7.11,21.88,108.86,11.22L208.18,122Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="tres">
+                    <polygon points="2.89 116.12 104.11 126.93 0.56 137.87 2.89 116.12" />
+                    <path
+                        d="M201.41,150.48l96,10.26-46.4,4.91-51.85,5.48,2.2-20.65m-.89-1.1-2.44,22.87,108.84-11.5-106.4-11.37Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="dos">
+                    <polygon points="1.72 144.91 103.19 136.86 3.44 166.72 1.72 144.91" />
+                    <path
+                        d="M296.62,171.55,249,185.81l-47,14.07-1.65-20.7,96.29-7.63m9.3-1.74-106.66,8.45,1.82,22.93,104.84-31.38Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="once">
+                    <polygon points="151.97 0.64 173.18 6.04 148.02 104.68 151.97 0.64" />
+                    <path
+                        d="M350.53,35.09l20.12,5.13-23.87,93.6,2-52.92,1.74-45.81m-.95-1.27q-2.08,54.68-4.16,109.36L371.87,39.5l-22.29-5.68Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="doce">
+                    <polygon points="179.64 8.22 199.35 17.73 155.13 109.41 179.64 8.22" />
+                    <path
+                        d="M378.07,42.76l18.7,9-42,87L370.26,75l7.81-32.2m-.68-1.44Q364.51,94.5,351.61,147.68L398.1,51.31l-20.71-10Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="trece">
+                    <polygon points="204.98 19.5 222.62 32.44 162.44 114.54 204.98 19.5" />
+                    <path
+                        d="M403.26,54.09,420,66.37l-57.11,77.9L398,65.93l5.3-11.84m-.41-1.54q-22.35,50-44.71,99.9l63.26-86.3-18.55-13.6Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="catorce">
+                    <polygon points="230.04 38.29 244.1 55.06 166.1 120.46 230.04 38.29" />
+                    <path d="M428.13,72.9l13.34,15.91-74,62.06,60.67-78m0-1.59-67.22,86.38,82-68.75L428.11,71.31Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="quince">
+                    <polygon points="248.01 61.07 258.33 80.36 168.59 128.41 248.01 61.07" />
+                    <path
+                        d="M445.94,95.67l9.8,18.31-85.15,45.59,75.35-63.9m.3-1.56-83.48,70.78,94.33-50.5L446.24,94.11Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="dieciseis">
+                    <polygon points="264.51 88.93 269.53 110.23 170.45 133.58 264.51 88.93" />
+                    <path
+                        d="M462.25,123.47,467,143.68l-94,22.15,40.93-19.43,48.32-22.93m.68-1.44L364.07,169l104.14-24.55L462.93,122Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="diecisiete">
+                    <polygon points="170.37 139.49 272.67 120.1 272.13 141.97 170.37 139.49" />
+                    <path
+                        d="M470.23,154.52l-.5,20.76-96.56-2.36,44.52-8.44,52.54-10m1-1.21L363.74,173.69l107,2.61.56-23Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="dieciocho">
+                    <polygon points="169.45 146.38 273.41 152.22 267.62 173.32 169.45 146.38" />
+                    <path d="M372.2,181l98.64,5.54-5.49,20L372.2,181m-9.34-1.53,103.19,28.32,6.09-22.18-109.28-6.14Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="diecinueve">
+                    <polygon points="165.58 153.08 264.85 184.47 254.02 203.48 165.58 153.08" />
+                    <path d="M368,188.8l43.21,13.65,51,16.12-10.28,18L368,188.8M359.32,185l93,53,11.39-20L359.32,185Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veinte">
+                    <polygon points="161.44 158.1 250.37 212.25 235.32 228.13 161.44 158.1" />
+                    <path
+                        d="M363.28,194.79,402,218.35l45.68,27.82-14.28,15.07-70.1-66.45M355.76,189l77.66,73.61L449.24,246,355.76,189Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veintiuno">
+                    <polygon points="153.35 162.03 227.7 234.91 209.44 246.97 153.35 162.03" />
+                    <path
+                        d="M354.44,199.49l51.9,50.88L425,268.65,407.67,280.1l-53.23-80.61m-6-7.3,59,89.29,19.2-12.67-78.16-76.62Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veintidos">
+                    <polygon points="145.64 169.09 202.6 256.24 182.18 264.1 145.64 169.09" />
+                    <path
+                        d="M345.87,207.12l54.05,82.7-19.37,7.45-34.68-90.15m-4.31-8.43L380,298.56l21.47-8.25-59.88-91.62Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veintitres">
+                    <polygon points="138.69 170.54 172.53 269.01 150.8 271.62 138.69 170.54" />
+                    <path
+                        d="M337.83,209l18.41,53.59,13.7,39.85-20.62,2.47L337.83,209m-2.11-9.22L348.45,306l22.83-2.74-35.56-103.5Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veinticuatro">
+                    <polygon points="119.32 271.04 131.18 169.94 141.05 273.59 119.32 271.04" />
+                    <path
+                        d="M329.21,208.49l4.42,46.37,4.95,52L318,304.42l11.26-95.93m.1-9.47L316.85,305.3,339.69,308,329.31,199Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veinticinco">
+                    <polygon points="89.92 263.7 124.81 168.07 110.47 271.2 89.92 263.7" />
+                    <path
+                        d="M321.75,206.48,316,247.84l-7.86,56.5-19.5-7.12,33.11-90.74M324,197.3,287.35,297.81,309,305.7q7.55-54.19,15.08-108.4Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veintiseis">
+                    <polygon points="62.36 249.18 117.73 163.75 80.72 261.08 62.36 249.18" />
+                    <path
+                        d="M313.67,201.79l-16.1,42.35-19,50-17.43-11.3,52.54-81m4.28-8.44-58.2,89.79,19.3,12.51L318,193.35Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veintisiete">
+                    <polygon points="38.2 228.86 112.53 159.31 53.15 244.84 38.2 228.86" />
+                    <path
+                        d="M307.52,196.71l-56.34,81.15L237,262.7l70.53-66m6.19-7.16-78.13,73.11,15.71,16.79,62.42-89.9Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="veintiocho">
+                    <polygon points="17.93 202.37 106.37 151.97 28.76 221.38 17.93 202.37" />
+                    <path
+                        d="M300.61,188.55l-32.67,29.21-41,36.65-10.28-18,83.92-47.82m7.68-5.53-93,53,11.39,20,81.58-73Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="diez">
+                    <polygon points="125.93 3.02 147.28 4.78 138.93 106.23 125.93 3.02" />
+                    <path
+                        d="M324.59,37.38l20.23,1.67-7.92,96.16-5.85-46.52-6.46-51.31m-1.15-1.09q6.84,54.29,13.67,108.58L345.9,38.14l-22.46-1.85Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="nueve">
+                    <polygon points="97.72 7.56 118.95 4.76 132.23 105.69 97.72 7.56" />
+                    <path
+                        d="M316.6,39.14l12.59,95.66-9.67-27.49-23-65.52,20.13-2.65m.87-1.12L295.12,41,331.43,144.2,317.47,38Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="ocho">
+                    <polygon points="71.61 17.21 91.83 10.13 125.47 106.21 71.61 17.21" />
+                    <path
+                        d="M289.6,44.59l31.89,91.07-19.26-31.83L270.44,51.3l19.16-6.71m.61-1.27-21.27,7.44,56.67,93.63L290.21,43.32Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="siete">
+                    <polygon points="47.52 33.11 66.2 21.71 119.23 108.6 47.52 33.11" />
+                    <path
+                        d="M264.11,56.22l50.32,82.44L246.39,67l17.72-10.81m.34-1.38-19.64,12,75.38,79.36L264.45,54.84Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="seis">
+                    <polygon points="27.34 53.77 42.85 38.34 114.62 110.53 27.34 53.77" />
+                    <path
+                        d="M240.93,72.86,309,141.37l-29.87-19.43-53-34.44,14.72-14.64m0-1.41L224.63,87.67l91.74,59.66L240.94,71.45Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+                <g id="cinco">
+                    <polygon points="12.99 79.08 24.86 60.7 110.38 115.91 12.99 79.08" />
+                    <path
+                        d="M223.09,95.2l81.15,52.39-30.45-11.51-62-23.43L223.09,95.2m-.3-1.38-12.47,19.32,102.36,38.72-89.89-58Z"
+                        transform="translate(-198.08 -33.82)" />
+                </g>
+            </svg>
+        </a>
+        <a class="navbar-brand" href="index.html">
+            <p>
+                <h1>Tucumán</h1>
+            </p>
+            <hr>
+            <p>
+                <h1 class="dosespacios">Turismo</h1>
+            </p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="que-conocer.html">¿Que conocer? </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="alojamientos.html">Alojamientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gastronomia.html">Gastronomía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="datos-utiles.html">Datos útiles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="redes-sociales d-none d-lg-block">
+            <a title="Facebook" target="_blank" href="https://www.facebook.com/tucumanturismo/">
+                <i class="fa fa-facebook fa-3x color-iconos" aria-hidden="true"></i>
+            </a>
+            <a title="Twitter" target="_blank" href="https://twitter.com/tucumanturismo?lang=es">
+                <i class="fa fa-twitter fa-3x color-iconos" aria-hidden="true"></i>
+            </a>
+            <a title="Instagram" target="_blank" href="https://www.instagram.com/tucumanturismo/?hl=es-la">
+                <i target="_blank" class="fa fa-instagram fa-3x color-iconos" aria-hidden="true"></i>
+            </a>
+            <a title="Home" target="_blank" href="index.html">
+                <i target="_blank" class="fa fa-inbox fa-3x color-iconos" aria-hidden="true"></i>
+            </a>
+        </div>
+    </nav>
+    <!--Carousel-->
+    <div class="bd-example turismo">
+        <div id="carouselAlojamiento" class="carousel slide" data-ride="carouselAlojamiento">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselAlojamiento" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselAlojamiento" data-slide-to="1"></li>
+                <li data-target="#carouselAlojamiento" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img  class="d-block w-100" src="img/aloj/1slide.jpg" alt="">
+                    <div class="carousel-caption animate__animated animate__fadeInUp">
+                        <h5 class="font-weight-bold">Busca tu alojamiento en Tucuman</h5>
+                        <p>Conocé las diferentes alternativas para disfrutar a pleno la provincia. Tucumán te invita a
+                            conocer una variada oferta de actividades.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img  class=" d-block w-100" src="img/aloj/2slide.jpg" alt="Second slide">
+                    <div class="carousel-caption animate__animated animate__fadeInUp">
+                        <h5 class="font-weight-bold">¿Dónde dormir?</h5>
+                        <p>Elegí cuál es tu lugar ideal de descanso. En Tucumán encontrás variadas opciones para que
+                            vivas una estadía inolvidable.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img  class=" d-block w-100" src="img/aloj/3slide.jpg" alt="Third slide">
+                    <div class="carousel-caption animate__animated animate__fadeInUp">
+
+                        <h5 class="font-weight-bold">Circuitos Turísticos
+                        </h5>
+                        <p>La Ciudad de San Miguel de Tucumán es la capital de la Provincia de Tucumán, considerada
+                            la metrópoli del Noroeste Argentino..</p>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselAlojamiento" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselAlojamiento" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <!--Título-->
+    <div class="container">
+        <h1 class="text-center">Alojamientos</h1>   
+    </div>
+    <hr>
+    <!--Cards-->
+    <div>
+        <!--Primera Fila-->
+        <div class="card-deck m-2 ">
+            <!-- tarjeta1 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/24.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">CATALINAS PARK</h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                Av. Soldatti Nº 380
+                                .</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted "> reservas@catalinaspark.com
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (54 381) 4502250 - 4502222
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas!
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- tarjeta2 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/27.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">ATAHUALPA YUPANQUI
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                Calle Paisandú Nº 2400
+                                .</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted "> reservashosteriatafiviejo@gmail.com
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (381) 4614120
+
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas!
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- tarjeta3 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/11.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">BICENTENARIO SUITES
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                Las Heras 21.</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted "> reservas@hotelbicentenario.com.ar
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (0381) 4319119
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- tarjeta4 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/16.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">SOL SAN JAVIER SPA ECO
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                Ruta Provincial Nº 340 Km.23.</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted "> reservas@hotelsolsanjavier.com.ar
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (0381) 4929004 / 4929200
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda Fila-->
+        <div class="card-deck m-2 ">
+
+            <!-- tarjeta5 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/3.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">TUCUMÁN CENTER SUITES
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                25 de mayo 230.</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted "> info@tucumancenterhotel.com.ar
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (0381) 4525555
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas!
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- tarjeta2 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/23.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">AMERIAN TUCUMAN APART
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                Calle Santiago del Estero Nº 425
+                                .</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">infotuc@amerian.com
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (0381) 4300100
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas!
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- tarjeta3 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/10.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">CARLOS V
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                Las Heras 21.</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">reservas@redcarlosV.com.ar
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (381) 4311666
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tarjeta8 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/15.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">HILTON GARDEN INN
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">Calle Miguel Lillo Nº 365
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">hgitucuman.reservas@hilton.com
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted "
+                                style="text-decoration: underline; ">(0381)
+                                4532000 / 2023
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tercera Fila -->
+        <div class="card-deck m-2 ">
+
+            <!-- tarjeta5 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/4.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">FRANCIA
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                Crisóstomo Álvarez 467
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted "> reservas@hotelfrancia.com.ar
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (0381) 4310781
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas!
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tarjeta2 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/1.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">MEDITERRANEO
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">Av. 24 de Septiembre Nº 364
+                                .</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">informeshotelmediterraneo@gmail.com
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (381) 4310025
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas!
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- tarjeta3 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/2.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">PORTAL DEL NORTE
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">
+                                México n° 879 y Av. Siria
+                                .</small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">info@hotelportaldelnorte.com
+
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted " style="text-decoration: underline; ">
+                                (0381) 4272722 / 4279270
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas
+                            <i class="fa fa-bed fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tarjeta8 -->
+            <div class="card m-2 rounded-0">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="logo1" src="img/aloj/9.jpg" alt="">
+                </div>
+                <!--Card content-->
+                <div class="card-body p-3">
+                    <!--Title-->
+                    <h4 class="card-title m-1">ACONQUIJA
+                    </h4>
+                    <!-- tarjeta de datos -->
+                    <div class=" d-inline ">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">Av. Aconquija 2530
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="card-text d-inline "><small class="text-muted ">info@aconquijahosteria.com.ar
+                            </small></p>
+                    </div>
+                    <br>
+                    <div class=" d-inline ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="card-text d-inline"><small class="text-muted "
+                                style="text-decoration: underline; ">(0381)
+                                4532000 / 2023
+                            </small></p>
+                    </div>
+                    <div class="d-flex justify-content-center m-3 ">
+                        <button type="button "
+                            class="btn btn-outline-warning text-dark btn-sm m-1 boton_estilo rounded-0">reservas
+                            <i class="fa fa-motorcycle fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Footer -->
+<div class="container">
+    <footer class="pt-4 my-md-5 pt-md-5 margin-top-5px border-top border-bottom bg-white">
+      <div class="row d-flex" style="margin-top: -65px; margin-bottom: -10px;">
+        <div class="col-12 col-md d-flex justify-content-center align-items-center">
+          <a target="_blank" href="https://www.argentina.gob.ar/turismoydeportes">
+            <img width="257" height="180" src="https://hotelga.com.ar/wp2020/wp-content/uploads/2019/12/minTur.png"
+              alt="Ministeria Turismo y Deportes Argentina">
+          </a>
+        </div>
+        <div class="col-12 col-md alineamiento">
+          <div class="row d-flex" style="justify-content:center; margin-top: 50px;">
+            <div class="col-12 text-center">
+              <a title="Home" href="#top">
+                <i class="fa fa-inbox fa-3x color-iconos" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-12 text-center">
+              <h2>Tucumán Turismo</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md d-flex justify-content-center align-items-center">
+          <a target="_blank" href="https://www.tucuman.gob.ar">
+            <img width="215" height="100"
+              src="https://www.comunicaciontucuman.gob.ar/nuevo_logo/0_LOGO%20GOBIERNO%20TUCUMAN%20HORIZONTAL.png"
+              alt="Logo Gobierno de Tucumán">
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md">
+            <a href="que-conocer.html" style="color: black;">
+              <h5 class="text-center">¿Qué conocer?</h5>
+            </a>
+            <ul class="list-unstyled text-small text-center">
+              <li class="text-muted"> <a href="que-conocer.html.sitios-arqueologicos"> Sitios Arqueológicos</a></li>
+              <li class="text-muted"> <a href="que-conocer.html"> Circuitos Turísticos</a></li>
+              <li class="text-muted"> <a href="que-conocer.html"> Parques y Reservas</a></li>
+              <li class="text-muted"> <a href="que-conocer.html"> Circuitos Religiosos</a></li>
+              <li class="text-muted"> <a href="que-conocer.html"> Rutas Temáticas</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md ">
+            <a href="gastronomia.html" style="color: black;">
+              <h5 class="text-center">Gastronomía</h5>
+            </a>
+            <ul class="list-unstyled text-small text-center">
+              <li class="text-muted"><a href="gastronomia.html">Restaurantes</a></li>
+              <li class="text-muted"><a href="gastronomia.html">Bares</a></li>
+              <li class="text-muted"><a href="gastronomia.html">Cafeterías</a></li>
+              <li class="text-muted"><a href="gastronomia.html">Peñas</a></li>
+              <li class="text-muted"><a href="gastronomia.html">Pizzerías</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md ">
+            <a href="alojamientos.html" style="color: black;">
+              <h5 class="text-center">Alojamientos</h5>
+            </a>
+            <ul class="list-unstyled text-small text-center">
+              <li class="text-muted"> <a href="alojamientos.html">Hoteles</a></li>
+              <li class="text-muted"><a href="alojamientos.html">Hostels</a></li>
+              <li class="text-muted"><a href="alojamientos.html">Apart Hotel</a></li>
+              <li class="text-muted"><a href="alojamientos.html">Cabañas</a></li>
+              <li class="text-muted"><a href="alojamientos.html">Residenciales</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md ">
+            <a href="datos-utiles.html" style="color: black;">
+              <h5 class="text-center">Datos Útiles</h5>
+            </a>
+            <ul class="list-unstyled text-small text-center">
+              <li class="text-muted">Preguntas frecuentes</li>
+              <br>
+              <a href="Contacto.html" style="color: black;">
+                <h5>Contacto</h5>
+              </a>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between mt-2">
+        <h6 class="text-muted" style="margin-top: 20px;">© 2020 Tucumán Turismo</h6>
+        <a href="#top"><i class="fa fa-arrow-circle-up color-iconos fa-2x" style="margin-top: 10px;"
+            aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+    <!-- Barra Sticky -->
+    <barra>
+        <div class="social-icon container">
+            <ul
+                style="position:fixed; bottom: 95px; right: 15px; list-style: none; z-index: 100; filter: drop-shadow(2px 4px 6px black); ">
+                <li style="margin-bottom: 8px;margin-left: 5px;">
+                    <a title="Facebook" target="_blank" href="https://www.facebook.com/tucumanturismo/">
+                        <i class="fa fa-facebook fa-3x color-iconos" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li style="margin-bottom: 8px;">
+                    <a title="Twitter" target="_blank" href="https://twitter.com/tucumanturismo?lang=es">
+                        <i class="fa fa-twitter fa-3x color-iconos" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li style="margin-bottom: 8px;">
+                    <a title="Instagram" target="_blank" href="https://www.instagram.com/tucumanturismo/?hl=es-la">
+                        <i class="fa fa-instagram fa-3x color-iconos" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li style="margin-bottom: 8px;">
+                    <a title="Home" target="_blank" href="index.html">
+                        <i class="fa fa-inbox fa-3x color-iconos" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul
+            style="position:fixed; bottom: 37px; right: 15px; list-style: none; z-index: 100; filter: drop-shadow(2px 4px 6px black); ">
+            <div class="search-box" style="margin-top: 28px;">
+                <input class="search-txt btn-warning text-black" type="text" placeholder="Toca para buscar">
+                <a class="search-btn">
+                    <i class="fa fa-search fa-3x" style="cursor: pointer;"></i>
+                </a>
+            </div>
+        </ul>
+    </barra>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
